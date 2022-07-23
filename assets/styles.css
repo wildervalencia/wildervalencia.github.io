@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    margin-top: 3rem;
+    background-color: rgb(222, 210, 193);
+
+}
+
+.card{
+    margin-bottom: 1rem;
+}
+
+.footer{
+    background-color: gainsboro;
+}
