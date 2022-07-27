@@ -79,10 +79,10 @@
 }
 
 .sepInfo{
-      background-color: white;
+        background-color: white;
         display: grid;
         grid-template-columns: 40% 60%;
-        align-items: center;
+        justify-items: center;
         height: 300px;
     }
 
@@ -92,7 +92,6 @@
     grid-area: span;
     width: 200px;
     height: 200px;
-
 }
 
 .info p{
@@ -120,6 +119,7 @@
     grid-template-columns: 30% 20% 30%;
     height: 450px;
     justify-content: center; /*ajusta justo y necesario al contenido*/
+    gap:20px;
 
 }
 
@@ -132,6 +132,7 @@
     border-color: rgba(164,97,36,0.3);
     border-radius: 15px 25px 40px 40px;
     height: 24rem;
+    gap: 20px;
     
 }
 
@@ -146,7 +147,7 @@
     background-color: azure;
 }
 
-.imput h3{
+.input h3{
 padding: 1%;
 }
 .borde{
@@ -175,4 +176,47 @@ padding: 1%;
 
 .materias img{
     width: 20px;
+}
+.flex-info{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.flex-column{
+    flex-grow: 3;
+}
+.flex-video{
+    flex-grow: 3;
+}
+
+.grid-footer{
+    background-color: #f1f1f1;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+ 
+
+}
+
+.grid-imgFooter{
+    padding: 2%;
+    text-align: center;
+    height: 24rem;
+    gap: 20px;
+}
+
+.textfooter{
+    color: #004a9b;
+}
+
+.grid-boxInfo{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#imgEstuFooter{
+    grid-area: span;
+    width: 40px;
+    height: 40px;
 }
