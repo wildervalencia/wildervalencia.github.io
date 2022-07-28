@@ -5,13 +5,15 @@
 }
 
 .head{
-    display: flex;
-    flex-flow: column wrap;
+    display: grid;
+    grid-template-rows: auto;
 }
+
 .encabezado{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
     background-image: url(/Proyectos/Landing/Img/bannerHeader.jpg);
+    padding: 0px 45px 0px 45px;
 }
 
 .Sesion{
@@ -22,14 +24,20 @@
 }
 
 .navigation {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     flex-flow: row wrap;
-    justify-content: flex-end;
-    list-style: none;
     margin: 0;
    /* background-image: url(/Proyectos/M1S3-20220718T163955Z-001/M1S3/flexbox-navbar/Img/head2.png);*/
- 
-}
+   padding: 0px 45px 0px 45px;
+ }
+
+ .listado{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-content: center;
+ }
 
 .navigation1 {
     display: flex;
@@ -53,7 +61,6 @@
     color: white;
     list-style: none;
 }
-
 
 @media screen and (max-width: 800px) {
     .navigation {
@@ -81,7 +88,7 @@
 .sepInfo{
         background-color: white;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 40% 50%;
         justify-items: center;
         height: 300px;
     }
@@ -97,7 +104,8 @@
 .info p{
     padding: 2%;
     color:  #1565C0;
-    justify-content: center;
+    justify-items: start;
+    text-align:justify;
 }
 
 .btnInscripcion{
@@ -177,46 +185,65 @@ padding: 1%;
 .materias img{
     width: 20px;
 }
-.flex-info{
-    display: flex;
-    flex-direction: row;
-    
-    
-}
 
-.flex-column{
-    flex-grow: 3;
-}
 .flex-video{
-    flex-grow: 3;
+    padding: 20px 0px 20px 0px;
+    background-color: #004A9B;
 }
 
 .grid-footer{
+    justify-content: center;
     background-color: #f1f1f1;
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
+    padding-top: 3%;
  
 
 }
 
 .grid-imgFooter{
-    padding: 2%;
     text-align: center;
     height: 24rem;
     gap: 20px;
+    
 }
 
 .textfooter{
     color: #004a9b;
+    text-align: start;
 }
 
 .grid-boxInfo{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
 }
 
 #imgEstuFooter{
     grid-area: span;
     width: 40px;
     height: 40px;
+}
+
+.grid-boxInfoCel{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 10px;
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+  
+}
+#imgPagoFooter{
+    grid-area: span;
+    width: 90%;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.textfooter1{
+    color: #004a9b;
+    text-align:start;
 }

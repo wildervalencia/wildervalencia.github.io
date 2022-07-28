@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>SEP SAS</title>
 </head>
 
 <body>
@@ -23,22 +23,23 @@
         
         
             
-        <ul class="navigation">
-            <div>
+        <div class="navigation">
+            <ul class="imagen">
                 <img id="imgIcono" src="assets/Img/iconoSEP.jpg" alt="">
-            </div>
-            <li><a href="#">Cursos Virtuales</a></li>
-            <li><a href="#">Cursos Presenciales</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
+            </ul>
+            <ul class="listado">
+                <li><a href="#">Cursos Virtuales</a></li>
+                <li><a href="#">Cursos Presenciales</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            
+        </div>
     </div>
     
     <section class="sepInfo">
-        <div >
-            
+        <div>           
                 <img id="imgEstudiantes" src="assets/Img/students.jpg" alt="Imagen de estudiantes">
-            
         </div>
         <div class="info">
             <div>
@@ -87,9 +88,7 @@
             <div class="borde">
                 <h1 style="color:blue"  >CURSOS</h1>
             </div>
-          
             <br>
-                     
             <br>
             
             <div class="materias">
@@ -117,7 +116,7 @@
                 <h3>Filosofia</h3>
             </div>
             
-            <div>
+            <div style="margin-top: 55px;">
                 <button>
                     <button class="btnEnviar">MATRICULATE</button>
                 </button>
@@ -134,27 +133,15 @@
             <h3>SI ACCEDES A UN PROGRAMA PRESENCIAL</h3>
             <br>
             <h3>¿Cuanto duran los programas?</h3>
-            <div>
+            <div style="margin-top: 85px;">
                 <button class="btnEnviar">PREGUNTAS FRECUENTES</button>
             </div>
         </div>
         
     </section>
     
-    <section>
-        <div class="flex-info">
-            <div class="flex-video">
-                <iframe  width="560" height="315" src="https://www.youtube.com/embed/ax0bZowQ1hI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-                
-
-                
-            <div class="flex-column">
-                <h1></h1>
-            </div>
-        </div>
-        
-
+    <section class="flex-video">
+        <iframe  width="560" height="315" src="https://www.youtube.com/embed/ax0bZowQ1hI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <footer>
@@ -170,7 +157,7 @@
                     <div>
                         <img id="imgEstuFooter" src="assets/Img/ubicacion.jpg" alt="Imagen de estudiantes"> 
                     </div>
-                    <div style="color: #004a9b;">
+                    <div style="color: #004a9b; text-align: start;">
                         <p>Carrera 23c #63-63 <br>Manizales - Caldas</p>
                     </div>
 
@@ -180,20 +167,73 @@
             <div class="grid-imgFooter">
                 <h2 class="textfooter" >Llámanos</h2>
                 <br><br>
-                <div class="grid-boxInfo">
+                <div class="grid-boxInfoCel">
                     <div>
                         <img id="imgEstuFooter" src="assets/Img/celular.jpg" alt="Imagen de estudiantes"> 
                     </div>
-                    <div style="color: #004a9b;">
+                    <div style="color: #004a9b; text-align: start; padding-top: 11px;">
                         <p>313131313</p>
                     </div>
 
+                </div>
+                <div class="grid-boxInfoCel">
+                    <div>
+                        <img id="imgEstuFooter" src="assets/Img/celular.jpg" alt="Imagen de estudiantes"> 
+                    </div>
+                    <div style="color: #004a9b; text-align: start; padding-top: 11px;">
+                        <p>1234235435</p>
+                    </div>
+
+                </div>
+                <div class="grid-boxInfoCel">
+                    <div>
+                        <img id="imgEstuFooter" src="assets/Img/telefono.jpg" alt="Imagen de estudiantes"> 
+                    </div>
+                    <div style="color: #004a9b; text-align: start; padding-top: 11px;">
+                        <p>313131313</p>
+                    </div>
+
+                </div>
             </div>
+
+        <div>
+            <h2 class="textfooter" >Escríbenos</h2>
+            <br> <br>
+            <div class="grid-boxInfoCel">
+                <div>
+                    <img id="imgEstuFooter" src="assets/Img/correo.jpg" alt="Imagen de correo"> 
+                </div>
+                <div style="color: #004a9b; text-align: start; padding-top: 11px;">
+                    <p>info@sep.edu.com</p>
+                </div>
+            </div>  
+            <div class="grid-boxInfoCel">
+                <div>
+                    <img id="imgEstuFooter" src="assets/Img/contacto.jpg" alt="Imagen de contacto"> 
+                </div>
+                <div style="color: #004a9b; text-align: start; padding-top: 11px;">
+                    <p>contáctenos</p>
+                    <br> <br>
+                </div>
+            </div>  
+
             <div>
-                <h1>Escríbenos</h1>
+                <h2 class="textfooter1">Síguenos en</h2>
+                <div class="redes">
+                     <div>
+                        <img id="imgEstuFooter" src="assets/Img/facebook.jpg" alt="Imagen de correo">
+                     </div>
+                     <div>
+                        <img id="imgEstuFooter" src="assets/Img/instagram.jpg" alt="Imagen de correo">
+                     </div>
+
+                </div>
             </div>
+        </div>
+        <div class="grid-imgFooter">
+            <h2 class="textfooter" >Métodos de Pago</h2>
             <div>
-                <h1>Métodos de Pago</h1>
+                <img id="imgPagoFooter" src="assets/Img/metodospago.jpg" alt="Imagen de contacto"> 
             </div>
         </div>
     </footer>
