@@ -62,35 +62,13 @@
     list-style: none;
 }
 
-@media screen and (max-width: 800px) {
-    .navigation {
-        justify-content: space-around;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .navigation {
-        flex-flow: column wrap;
-    }
-
-    .navigation a {
-        text-align: center;
-        padding: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .navigation li:last-of-type a {
-        border-bottom: none;
-    }
-}
-
 .sepInfo{
         background-color: white;
         display: grid;
         grid-template-columns: 40% 50%;
         justify-items: center;
         height: 300px;
+        align-items: center;
     }
 
 
@@ -99,6 +77,11 @@
     grid-area: span;
     width: 200px;
     height: 200px;
+}
+.botones{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
 }
 
 .info p{
@@ -125,7 +108,7 @@
     background-color: antiquewhite;
     display: grid;
     grid-template-columns: 30% 20% 30%;
-    height: 450px;
+    padding-bottom: 25px;
     justify-content: center; /*ajusta justo y necesario al contenido*/
     gap:20px;
 
@@ -139,15 +122,16 @@
     border-style: dotted;
     border-color: rgba(164,97,36,0.3);
     border-radius: 15px 25px 40px 40px;
-    height: 24rem;
+    
     gap: 20px;
     
 }
 
-.imput{
+.input{
     margin-left: 2%;
     padding-left: 3%;
     text-align: start;
+    align-items: center;
     border-width: 9px;
     border: 1px solid;
     width: 90%;
@@ -186,9 +170,10 @@ padding: 1%;
     width: 20px;
 }
 
-.flex-video{
+.video{
     padding: 20px 0px 20px 0px;
     background-color: #004A9B;
+    text-align: center;
 }
 
 .grid-footer{
@@ -246,4 +231,132 @@ padding: 1%;
 .textfooter1{
     color: #004a9b;
     text-align:start;
+}
+/*
+*/
+.btnTarjetaTres{
+    margin-top: 85px; 
+}
+.btnTarjetados{
+    margin-top: 55px;
+}
+
+.btnTarjetados{
+    margin-top: 55px;
+}
+
+
+/*  ++++++++++++++++ RESPONSIVE ++++++++++++++++++++++++ */
+@media screen and (max-width: 1280px) {
+    .btnTarjetaTres{
+        margin-top: 67px;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
+@media screen and (max-width: 1190px) {
+    .btnTarjetaTres{
+        margin-top: 60px;
+    }
+    .btnTarjetados{
+        margin-top: 50px;
+    } 
+}
+
+@media screen and (max-width: 1183px) {
+    .btnTarjetaTres{
+        margin-top: 60px;
+    }
+    .btnTarjetados{
+        margin-top: 66px;
+    } 
+}
+@media screen and (max-width: 1082px) {
+    .btnTarjetaTres{
+        margin-top: 82px;
+    }
+    .btnTarjetados{
+        margin-top: 92px;
+    } 
+}
+
+
+@media screen and (max-width: 1035px) {
+    .btnTarjetaTres{
+        margin-top: 60px;
+    }
+   
+}
+
+@media screen and (max-width: 1029px) {
+    .btnTarjetaTres{
+        margin-top: 35px;
+    }
+   
+}
+
+@media screen and (max-width: 1001px) {
+    .btnEnviar{
+        width: 77%;
+    }
+   
+}
+
+@media screen and (max-width: 962px) {
+    .btnTarjetaUno{
+        margin-top: 0px;
+    }
+    .btnTarjetaTres{
+        margin-top: 47px;
+    }
+    .btnTarjetados{
+        margin-top: 106px;
+    }
+}
+
+@media screen and (max-width: 982px) {
+    #imgEstudiantes{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+@media screen and (max-width: 811px) {
+    .grid-container { 
+        padding: 7% 7% 7% 7%;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        justify-content: center; /*ajusta justo y necesario al contenido*/
+        gap:20px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
 }
