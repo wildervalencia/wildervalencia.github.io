@@ -78,6 +78,11 @@
     width: 200px;
     height: 200px;
 }
+
+#verVideo{
+    width: 560px;
+    height: 315px;
+}
 .botones{
     display: grid;
     grid-template-columns: auto auto;
@@ -182,13 +187,12 @@ padding: 1%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     padding-top: 3%;
- 
+    padding-bottom: 1%;
 
 }
 
 .grid-imgFooter{
     text-align: center;
-    height: 24rem;
     gap: 20px;
     
 }
@@ -340,23 +344,177 @@ padding: 1%;
         justify-content: center; /*ajusta justo y necesario al contenido*/
         gap:20px;
     }
+    .grid-footer{
+        justify-content: start;
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3%;
+    }
+    .textfooter{
+        color: #004a9b;
+        text-align: center;
+    }
+    
+    #imgPagoFooter{
+        grid-area: span;
+        width: 50%;
+        margin-top: 15px;
+        align-items: center;
+    }
 }
 
+@media screen and (max-width: 765px) {
+    .grid-container { 
+        padding: 7% 7% 7% 7%;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        justify-content: center; /*ajusta justo y necesario al contenido*/
+        gap:20px;
+    }
+ 
+    #verVideo{
+        width: 360px;
+        height: 215px;
+    }
+    .sepInfo{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        height: 370px;
+        align-items: center;
+    }
+    
+    .info{
+       
+        justify-content: center;
+        width: 80%;
+    }
+    .info p{
+        padding: 2%;
+        color:  #1565C0;
+        text-align:justify;
+        
+    }
+    .botones{
+        justify-content:space-around;
+    }
+    
+}
 
 
 @media screen and (max-width: 600px) {
-    .navigation {
-        flex-flow: column wrap;
+  .sepInfo{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        
+        align-items: center;
     }
 
-    .navigation a {
-        text-align: center;
-        padding: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .navigation li:last-of-type a {
-        border-bottom: none;
-    }
 }
+
+
+@media screen and (max-width: 514px) {
+    .sepInfo{
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          height: 400px;
+          align-items: center;
+      }
+      .imagen{
+        display: none;
+      }
+  
+  }
+
+  @media screen and (max-width: 460px) {
+    .listado {
+        display: flex;
+        flex-direction: column;
+       /* background-image: url(/Proyectos/M1S3-20220718T163955Z-001/M1S3/flexbox-navbar/Img/head2.png);*/
+       padding: 0px 45px 0px 45px;
+       justify-content: center;
+     }
+    .sepInfo{
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          height: 480px;
+          align-items: center;
+      }
+      .imagen{
+        display: none;
+      }
+      .botones{
+        display: flex;
+        flex-direction: column;
+
+      }
+  }
+
+  
+  @media screen and (max-width: 420px) {
+    .listado {
+        display: flex;
+        flex-direction: column;
+       /* background-image: url(/Proyectos/M1S3-20220718T163955Z-001/M1S3/flexbox-navbar/Img/head2.png);*/
+       padding: 0px 45px 0px 45px;
+       justify-content: center;
+     }
+    .sepInfo{
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          height: 500px;
+          align-items: center;
+      }
+      .imagen{
+        display: none;
+      }
+      .botones{
+        display: flex;
+        flex-direction: column;
+
+      }
+  }
+
+  
+  @media screen and (max-width: 387px) {
+    .listado {
+        display: flex;
+        flex-direction: column;
+       /* background-image: url(/Proyectos/M1S3-20220718T163955Z-001/M1S3/flexbox-navbar/Img/head2.png);*/
+       padding: 0px 45px 0px 45px;
+       justify-content: center;
+     }
+    .sepInfo{
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          height: 510px;
+          align-items: center;
+      }
+      .imagen{
+        display: none;
+      }
+      .botones{
+        display: flex;
+        flex-direction: column;
+
+      }
+      .btnInscripcion{
+        font-size: medium;
+        width: 172px;
+        height: 40px;
+      }
+  }
