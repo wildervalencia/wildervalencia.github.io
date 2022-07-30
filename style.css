@@ -12,7 +12,7 @@
 .encabezado{
     display: grid;
     grid-template-columns: auto auto;
-    background-image: url(/Clase4/GitHub/wildervalencia.github.io/assets/Img/bannerHeader.jpg));
+    background-color: #004A9B;
     padding: 0px 45px 0px 45px;
 }
 
